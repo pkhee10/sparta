@@ -1,19 +1,15 @@
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
-}
-.wrap {
-	width: 600px;	
-	margin: auto;
-}
 * {
 	font-family: 'Sunflower', sans-serif;
 	font-size: 20px;
+
 }
+
+.wrap {
+	width: 600px;	
+	margin: auto;
+	/*color: darkgray;*/
+}
+
 .mytitle {
 	font-size: 60px;
 	/*color: white;
@@ -31,9 +27,11 @@
 	align-items: center;
 	justify-content: center;*/
 }
+
 .myprice {
 	font-size: 30px;
 }
+
 .myimg{
 	display: flex;
 	height: 300px;	
@@ -44,10 +42,12 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
- }
+}
+
 .comment{
 	color: red;
 }
+
 .abc {
 	background: yellowgreen;
 }
@@ -60,6 +60,7 @@
 	border: solid;
 	display: block;
 }
+
 p {
 	/*
 	background: yellowgreen;
@@ -73,4 +74,12 @@ p {
 /* 자식선택자: mytitle 바로 아래 있는 h5 태그 , 시계방향 */
 .mytitle > h5 {
 	margin: 5px 0 0 0; 
+}
+.card-columns {
+	@include media-breakpoint-only(lg) {
+		column-count: 4;
+	}
+	@include media-breakpoint-only(xl) {
+		column-count: 5;
+	}
 }
